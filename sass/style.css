@@ -194,6 +194,8 @@ label {
   }
   .details-container {
     order: 1;
+    margin: 2rem auto;
+    justify-content: center;
   }
   .form-container h1 {
     padding: 20px;
