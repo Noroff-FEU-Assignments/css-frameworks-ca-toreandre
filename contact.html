@@ -22,10 +22,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">News</a>
+                  <a class="nav-link" href="./news.html">News</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
@@ -48,29 +48,34 @@
                         <form class="contact-form">
                             <div class="form-group">
                                 <label for="name">Name</label>
+                                <p class="form-error" id="name-error">Name must be min. 2 characters</p>
                                 <input type="name" class="form-control" id="name" placeholder="">
                             </div>
 
                             <div class="form-group">
                                 <label for="email">Email</label>
+                                <p class="form-error" id="email-error">E-mail adress is not vaild!</p>
                                 <input type="email" class="form-control" id="email" placeholder="">
                             </div>
 
                             
                             <div class="form-group">
                                 <label for="website">Website</label>
+                                <p class="form-error" id="website-error">Website must be min. 4 characters</p>
                                 <div class="input-group-text">https://</div>
                                 <input type="text" class="form-control" id="website" placeholder="">
                             </div>
 
                             <div class="form-group">
                                 <label for="message">Message</label>
+                                <p class="form-error" id="message-error">Message must be min. 10 characters</p>
                                 <textarea class="form-control" id="message" rows="3"></textarea>
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox">
+                                <p class="form-error" id="checkbox-error">Please obey!</p>
+                                <label class="form-check-label" for="checkbox">
                                     Allow us to sell your personal details to whomever we want
                                 </label>
                             </div>
@@ -119,6 +124,11 @@
           </div>
     </footer>
 </div>
+    <script src="./js/formValidation.js"> </script>
+    <script>
+    </script>
+
+
     <link rel="stylesheet" href="./sass/style.css">
 </body>
 </html>

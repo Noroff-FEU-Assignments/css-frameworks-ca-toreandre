@@ -98,6 +98,13 @@ label {
   max-width: 555px;
   padding: 50px;
   margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
 }
 
 .contact-form textarea {
@@ -154,6 +161,22 @@ label {
   text-align: left;
 }
 
+.form-error {
+  display: none;
+  color: #ec4755;
+  font-size: 14px;
+  margin-top: 10px;
+  -webkit-margin-after: 0.3rem;
+          margin-block-end: 0.3rem;
+}
+
+.text-success {
+  display: none;
+  color: #00b894;
+  font-size: 22px;
+  margin: auto;
+}
+
 @media only screen and (max-width: 992px) {
   .form-container {
     order: 2;
@@ -167,6 +190,9 @@ label {
   }
   .contact-form {
     margin: 0 auto;
+  }
+  .row {
+    flex-direction: column;
   }
 }
 .news-header, .bottom-btns {

@@ -3,6 +3,13 @@
     max-width: 555px;
     padding: 50px;
     margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
 }
 
 .contact-form textarea {
@@ -59,6 +66,21 @@
     text-align: left;
 }
 
+.form-error {
+    display: none;
+    color: $red-color;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-block-end: 0.3rem;
+}
+
+.text-success {
+    display: none;
+    color: $green-color;
+    font-size: 22px;
+    margin: auto;
+}
+
 @media only screen and (max-width: 992px) {
 
     .form-container {
@@ -76,6 +98,10 @@
 
     .contact-form {
         margin: 0 auto;
+    }
+
+    .row {
+        flex-direction: column;
     }
 
 }
