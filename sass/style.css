@@ -53,6 +53,11 @@ footer a {
   color: #767676;
 }
 
+footer a:hover {
+  text-decoration: underline;
+  color: #E92569 !important;
+}
+
 body {
   background: rgb(255, 255, 255);
   background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(229, 229, 229) 100%);
@@ -74,6 +79,10 @@ p, a, h2 {
 h2 {
   font-size: 20px;
   color: #000000;
+}
+
+a {
+  text-decoration: none;
 }
 
 label {
@@ -159,4 +168,77 @@ label {
   .contact-form {
     margin: 0 auto;
   }
+}
+.news-header, .bottom-btns {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #E92569;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 250px;
+  margin-right: 27px;
+  margin-bottom: 27px;
+  border-radius: 4px;
+  border: none;
+}
+
+.card:nth-last-child(-n+4) {
+  margin-bottom: 0;
+}
+
+.card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.card-content {
+  background-color: white;
+  padding: 20px;
+}
+
+.card-content h2 {
+  padding: 0px 20px;
+}
+
+.card-content .btn-primary {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  background-color: #E92569;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.card-content .btn-primary::after {
+  content: "";
+  background-color: #767676;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  border-radius: 0 4px 4px 0;
+}
+
+.btn-secondary.active, .btn-secondary.disabled {
+  border: 1px solid #E92569 !important;
+  width: 40px;
+}
+
+.btn-secondary.active {
+  background-color: #E92569 !important;
+}
+
+.btn-secondary.disabled {
+  background-color: #FFFFFF;
+  color: #E92569;
 }/*# sourceMappingURL=style.css.map */
