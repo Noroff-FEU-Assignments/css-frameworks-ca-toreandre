@@ -18,6 +18,14 @@
 
 }
 
+.nav-tabs .nav-link {
+    color: $primary-color;
+}
+
+.nav-tabs .active{
+    color: $dark-gray!important;
+}
+
 .btn-outline-success {
     background-color: $primary-color!important;
     color: white;

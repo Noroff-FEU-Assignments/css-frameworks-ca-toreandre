@@ -16,6 +16,14 @@
   color: black;
 }
 
+.nav-tabs .nav-link {
+  color: #E92569;
+}
+
+.nav-tabs .active {
+  color: #767676 !important;
+}
+
 .btn-outline-success {
   background-color: #E92569 !important;
   color: white;

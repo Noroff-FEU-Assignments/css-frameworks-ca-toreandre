@@ -1,7 +1,18 @@
-$font-primary: "Playfair Display", sans-serif;
-$font-secondary: "Lato", sans-serif;
+$primary-font: "Playfair Display", sans-serif;
+$secondary-font: "Lato", sans-serif;
 
 $primary-color: #E92569;
 $secondary-color: #767676;
 
+$dark-gray: #767676;
+
 $navbar-bg: #EFEFEF;
+
+$nav-tabs-border-color: $dark-gray;
+$nav-tabs-link-active-color: $dark-gray;
+$nav-tabs-link-active-bg: $navbar-bg;
+$nav-tabs-link-active-border-color: $nav-tabs-link-active-bg;
+
+$nav-link-font-size: 19px;
+$nav-link-color: #E92569!important;
+$nav-link-hover-color: $secondary-color;
