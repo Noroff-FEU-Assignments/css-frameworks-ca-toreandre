@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: $white-color;
+    color: $secondary-color;
+    font-family: 'Lato', sans-serif;
+}
+
+footer a {
+    font-family: 'Lato', sans-serif;
+    color: $secondary-color;
+}

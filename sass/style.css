@@ -1,5 +1,5 @@
 .navbar {
-  margin: auto 75px;
+  padding: 15px 75px;
 }
 
 .navbar-brand {
@@ -34,6 +34,129 @@
   justify-content: space-between;
 }
 
-.form-inline {
+.navbar-collapse .form-inline {
   display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  color: #767676;
+  font-family: "Lato", sans-serif;
+}
+
+footer a {
+  font-family: "Lato", sans-serif;
+  color: #767676;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(229, 229, 229) 100%);
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  color: #E92569;
+  margin: 1rem auto;
+}
+
+p, a, h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #767676;
+}
+
+h2 {
+  font-size: 20px;
+  color: #000000;
+}
+
+label {
+  color: #767676;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.contact-form {
+  background-color: #EFEFEF;
+  max-width: 555px;
+  padding: 50px;
+  margin-left: 40px;
+}
+
+.contact-form textarea {
+  height: 224px;
+}
+
+.contact-form button {
+  background-color: #767676;
+  border: none;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icon-child {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 130px auto 0 auto;
+  order: 2;
+}
+
+.details-container a, .details-container p {
+  color: #767676;
+  text-decoration: none;
+}
+
+.details-container a:hover, .details-container p:hover {
+  color: #E92569;
+  text-decoration: underline;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+  order: 1;
+}
+
+.form-container h1 {
+  margin: unset;
+  padding-left: 50px;
+  padding-top: 50px;
+  margin-left: 40px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 992px) {
+  .form-container {
+    order: 2;
+  }
+  .details-container {
+    order: 1;
+  }
+  .form-container h1 {
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .contact-form {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */
